@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>榆次大学生家教网</title>
+    <title>Document</title>
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="dist/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css.css"> -->
     <style>
       .foot{
-          width: 1140px;
+          width: 100%;
           height: 200px;
           background-color: rgb(220, 219, 219);
       }
       .container-fluid{
           padding-left: 0px;
+          padding-right: 0px;
       }
+      
       #index1{
           position: relative;
           left: -17px;
       }
+      a{text-decoration:none;}
+
+      a:hover{text-decoration:underline;}
     </style>
 </head>
 <body>
@@ -57,9 +62,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle navbar-brand " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">加入我们<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">我是大学生</a></li>
+                  <li><a href="#" onclick="alert('详细信息请联系13333442473(微信同号)')">我是大学生</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#">我是家长</a></li>
+                  <li><a href="#" onclick="alert('详细信息请联系13333442473(微信同号)')">我是家长</a></li>
                   <!-- <li role="separator" class="divider"></li> -->
                   <!-- <li><a href="#"></a></li> -->
                   <!-- <li role="separator" class="divider"></li>
@@ -68,13 +73,13 @@
                   <li><a href="#">One more separated link</a></li> -->
                 </ul>
               </li>
-              <li><a class="navbar-brand" href="#">关于我们</a></li>
+              <li><a class="navbar-brand" href="https://gitee.com/liangzechen" >关于我们</a></li>
             </ul>
             <form class="navbar-form navbar-right">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="输入...">
               </div>
-              <button type="submit" class="btn btn-default">搜索</button>
+              <button type="submit" class="btn btn-default" onclick="alert('抱歉，暂不支持搜索功能')">搜索</button>
             </form>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -89,12 +94,13 @@
       <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="jiajiao.png" alt="">
+            <img src="https://gitee.com/liangzechen/images/blob/master/jiajiao.png" alt="...">
             <div class="caption">
               <h3>梁泽琛</h3>
-              <a>擅长科目:</a><a>数学</a><br>
-              <a>个人介绍:</a>
-              <p>本人好好学习天天向上</p>
+              <p>擅长科目:数学</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:太原理工大学</p>
+              <p>居住地址:榆次区万达广场对面</p>
               <p>
                 <button type="button" class="btn btn-primary" title="联系方式"
                         data-container="body" data-toggle="popover" data-placement="top"
@@ -103,7 +109,9 @@
                 </button>
                 <button type="button" class="btn btn-success" title="梁泽琛"  
                   data-container="body" data-toggle="popover" data-placement="bottom" 
-                  data-content="目前就读于太原理工大学">
+                  data-content="各位家长您好:
+                  我是毕业于榆次一中尖子班的大学生，在这个漫长的暑假，为了有一个自我锻炼提升，体验生活的机会。在暑假期间想寻找一份兼职工作，本人在校成绩优异，乐于思考，善于钻研，在校期间我们一直担任课代表，这也练就了我较强的分析和表达能力。
+                  我们可以做初中或高中课程辅导，工资要求不高，时间宽裕。如果您给我们一个机会，我们会还您十分的惊喜！">
                 更多信息
               </button>
               </p>
@@ -112,12 +120,13 @@
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="jiajiao.png" alt="">
+            <img src="https://gitee.com/liangzechen/images/blob/master/jiajiao.png" alt="...">
             <div class="caption">
               <h3>梁泽琛</h3>
-              <a>擅长科目:</a><a>数学</a><br>
-              <a>个人介绍:</a>
-              <p>本人好好学习天天向上</p>
+              <p>擅长科目:数学</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:太原理工大学</p>
+              <p>居住地址:榆次区万达广场对面</p>
               <p>
                 <button type="button" class="btn btn-primary" title="联系方式"
                         data-container="body" data-toggle="popover" data-placement="top"
@@ -126,7 +135,9 @@
                 </button>
                 <button type="button" class="btn btn-success" title="梁泽琛"  
                   data-container="body" data-toggle="popover" data-placement="bottom" 
-                  data-content="目前就读于太原理工大学">
+                  data-content="各位家长您好:
+                  我是毕业于榆次一中尖子班的大学生，在这个漫长的暑假，为了有一个自我锻炼提升，体验生活的机会。在暑假期间想寻找一份兼职工作，本人在校成绩优异，乐于思考，善于钻研，在校期间我们一直担任课代表，这也练就了我较强的分析和表达能力。
+                  我们可以做初中或高中课程辅导，工资要求不高，时间宽裕。如果您给我们一个机会，我们会还您十分的惊喜！">
                 更多信息
               </button>
               </p>
@@ -135,12 +146,13 @@
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="jiajiao.png" alt="">
+            <img src="https://gitee.com/liangzechen/images/blob/master/jiajiao.png" alt="...">
             <div class="caption">
               <h3>梁泽琛</h3>
-              <a>擅长科目:</a><a>数学</a><br>
-              <a>个人介绍:</a>
-              <p>本人好好学习天天向上</p>
+              <p>擅长科目:数学</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:太原理工大学</p>
+              <p>居住地址:榆次区万达广场对面</p>
               <p>
                 <button type="button" class="btn btn-primary" title="联系方式"
                         data-container="body" data-toggle="popover" data-placement="top"
@@ -149,7 +161,9 @@
                 </button>
                 <button type="button" class="btn btn-success" title="梁泽琛"  
                   data-container="body" data-toggle="popover" data-placement="bottom" 
-                  data-content="目前就读于太原理工大学">
+                  data-content="各位家长您好:
+                  我是毕业于榆次一中尖子班的大学生，在这个漫长的暑假，为了有一个自我锻炼提升，体验生活的机会。在暑假期间想寻找一份兼职工作，本人在校成绩优异，乐于思考，善于钻研，在校期间我们一直担任课代表，这也练就了我较强的分析和表达能力。
+                  我们可以做初中或高中课程辅导，工资要求不高，时间宽裕。如果您给我们一个机会，我们会还您十分的惊喜！">
                 更多信息
               </button>
               </p>
@@ -178,69 +192,78 @@
         <div class="row">
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-            <img src="jiajiao.png" alt="">
+              <img src="https://gitee.com/liangzechen/images/blob/master/jiajiao.png" alt="...">
               <div class="caption">
                 <h3>梁泽琛</h3>
-                <a>擅长科目:</a><a>数学</a><br>
-                <a>个人介绍:</a>
-                <p>本人好好学习天天向上</p>
-                <p>
-                  <button type="button" class="btn btn-primary" title="联系方式"
-                          data-container="body" data-toggle="popover" data-placement="top"
-                          data-content="13333442473(微信同号)">
-                      联系一下
-                  </button>
-                  <button type="button" class="btn btn-success" title="梁泽琛"  
-                    data-container="body" data-toggle="popover" data-placement="bottom" 
-                    data-content="目前就读于太原理工大学">
-                  更多信息
+              <p>擅长科目:数学</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:太原理工大学</p>
+              <p>居住地址:榆次区万达广场对面</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
                 </button>
+                <button type="button" class="btn btn-success" title="梁泽琛"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="各位家长您好:
+                  我是毕业于榆次一中尖子班的大学生，在这个漫长的暑假，为了有一个自我锻炼提升，体验生活的机会。在暑假期间想寻找一份兼职工作，本人在校成绩优异，乐于思考，善于钻研，在校期间我们一直担任课代表，这也练就了我较强的分析和表达能力。
+                  我们可以做初中或高中课程辅导，工资要求不高，时间宽裕。如果您给我们一个机会，我们会还您十分的惊喜！">
+                更多信息
+              </button>
                 </p>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-            <img src="jiajiao.png" alt="">
+              <img src="https://gitee.com/liangzechen/images/blob/master/jiajiao.png" alt="...">
               <div class="caption">
                 <h3>梁泽琛</h3>
-                <a>擅长科目:</a><a>数学</a><br>
-                <a>个人介绍:</a>
-                <p>本人好好学习天天向上</p>
-                <p>
-                  <button type="button" class="btn btn-primary" title="联系方式"
-                          data-container="body" data-toggle="popover" data-placement="top"
-                          data-content="13333442473(微信同号)">
-                      联系一下
-                  </button>
-                  <button type="button" class="btn btn-success" title="梁泽琛"  
-                    data-container="body" data-toggle="popover" data-placement="bottom" 
-                    data-content="目前就读于太原理工大学">
-                  更多信息
+              <p>擅长科目:数学</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:太原理工大学</p>
+              <p>居住地址:榆次区万达广场对面</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
                 </button>
+                <button type="button" class="btn btn-success" title="梁泽琛"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="各位家长您好:
+                  我是毕业于榆次一中尖子班的大学生，在这个漫长的暑假，为了有一个自我锻炼提升，体验生活的机会。在暑假期间想寻找一份兼职工作，本人在校成绩优异，乐于思考，善于钻研，在校期间我们一直担任课代表，这也练就了我较强的分析和表达能力。
+                  我们可以做初中或高中课程辅导，工资要求不高，时间宽裕。如果您给我们一个机会，我们会还您十分的惊喜！">
+                更多信息
+              </button>
                 </p>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-            <img src="jiajiao.png" alt="">
+              <img src="https://gitee.com/liangzechen/images/blob/master/jiajiao.png" alt="...">
               <div class="caption">
                 <h3>梁泽琛</h3>
-                <a>擅长科目:</a><a>数学</a><br>
-                <a>个人介绍:</a>
-                <p>本人好好学习天天向上</p>
-                <p>
-                  <button type="button" class="btn btn-primary" title="联系方式"
-                          data-container="body" data-toggle="popover" data-placement="top"
-                          data-content="13333442473(微信同号)">
-                      联系一下
-                  </button>
-                  <button type="button" class="btn btn-success" title="梁泽琛"  
-                    data-container="body" data-toggle="popover" data-placement="bottom" 
-                    data-content="目前就读于太原理工大学">
-                  更多信息
+              <p>擅长科目:数学</p>
+              <p>高中就读学校:榆次一中(尖子班)</p>
+              <p>大学就读学校:太原理工大学</p>
+              <p>居住地址:榆次区万达广场对面</p>
+              <p>
+                <button type="button" class="btn btn-primary" title="联系方式"
+                        data-container="body" data-toggle="popover" data-placement="top"
+                        data-content="13333442473(微信同号)">
+                    联系一下
                 </button>
+                <button type="button" class="btn btn-success" title="梁泽琛"  
+                  data-container="body" data-toggle="popover" data-placement="bottom" 
+                  data-content="各位家长您好:
+                  我是毕业于榆次一中尖子班的大学生，在这个漫长的暑假，为了有一个自我锻炼提升，体验生活的机会。在暑假期间想寻找一份兼职工作，本人在校成绩优异，乐于思考，善于钻研，在校期间我们一直担任课代表，这也练就了我较强的分析和表达能力。
+                  我们可以做初中或高中课程辅导，工资要求不高，时间宽裕。如果您给我们一个机会，我们会还您十分的惊喜！">
+                更多信息
+              </button>
                 </p>
               </div>
             </div>
